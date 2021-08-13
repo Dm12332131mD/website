@@ -1,0 +1,10 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(160, 176, 224);
+}
+
+nav {
+    background-color: rgb(140, 156, 204);
+    padding: 30px;
+}
