@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - DmmD</title>
+        <meta property="og:description" content="idk">
+        <meta property="og:image" content="/src/images/favicon.png">
+        <meta property="og:title" content="DmmD">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://dmmd.iipython.cf">
         <link href="/css/index.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/src/images/favicon.png" rel="icon" type="image/png">
+        <title>Home - DmmD</title>
     </head>
     <body>
-        <nav>
-            <a href="https://google.com">Test</a>
+        <nav class="highlight-disable">
+            <ul>
+                <a href="/">Home</a>
+                <a>Projects</a>
+                <a>API</a>
+                <a href="https://iipython.cf">iiPython</a>
+                <a>Extras</a>
+            </ul>
         </nav>
+        <div id="content">
+            <div id="header" class="highlight-disable">
+                <a id="header-title" href="/funni">Title</a>
+                <p id="header-description">Description</p>
+            </div>
+            <div id="about">
+                <p id="about-title" class="highlight-disable">About Me</p>
+                <p id="about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus auctor dapibus. Maecenas at lacus pellentesque, tincidunt ante pulvinar, gravida est. Fusce augue tortor, pellentesque quis quam id, facilisis luctus nulla. Integer sed tempus erat. Praesent eu varius mauris. Praesent mollis diam vel risus maximus, eget volutpat sem fermentum. Praesent laoreet, risus efficitur finibus consequat, augue odio rhoncus magna, tincidunt interdum orci dolor vitae diam. Nunc cursus lorem quam, sed pretium metus molestie at. Aliquam id mauris mattis, ultricies turpis eu, fermentum elit. Sed euismod arcu porttitor lacinia finibus. Cras ut vestibulum libero. Quisque quis ligula vitae diam scelerisque suscipit non sed elit. In hac habitasse platea dictumst. Quisque ac ultricies urna, sed mollis quam. Mauris tristique purus turpis, nec egestas dui sagittis et.</p>
+            </div>
+            <div id="featured" class="highlight-disable">
+                <p id="featured-title">Featured</p>
+                <ul id="featured-list">
+                    <a href="/projects/dmot">Dmot</a>
+                    <a href="/projects/dmmdjs">DmmD.js</a>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <a>Gacker Goos</a>
+            </ul>
+        </footer>
+        <script src="/js/index.js"></script>
+        <script src="/js/home.js"></script>
     </body>
 </html>

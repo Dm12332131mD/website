@@ -1,10 +1,101 @@
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(160, 176, 224);
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    --theme-black: #05123d;
+    --theme-dark: #081D61;
+    --theme: #162C7A;
+    --theme-light: #0E33AD;
+    --theme-highlight: #2D59FA;
+    --theme-white: #C4D1FF;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--theme);
+    font-family: Oxygen, sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-light);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--theme-highlight);
+}
+
+/* Navigation */
 nav {
-    background-color: rgb(140, 156, 204);
-    padding: 30px;
+    background-color: var(--theme-dark);
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+nav ul a {
+    color: var(--theme-white);
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+    margin: 0px;
+    padding: 0px 50px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    background-color: var(--theme-highlight);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 0px 60px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--theme-dark);
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Other */
+
+.highlight-disable {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }

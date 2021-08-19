@@ -1,7 +1,6 @@
 // Imports
 const config = require("./config.json");
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
 
 // Variables
@@ -12,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "/public/")));
 app.use("/", require("./public/routes/base.js"));
+app.use((req, res) => res.sendFile(path.join(__dirname, "./public/html/404.html")));
 
 // Listens
 app.listen(config.port, () => {

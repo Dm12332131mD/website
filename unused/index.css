@@ -1,0 +1,115 @@
+:root {
+    --theme-darker: rgb(96, 112, 160);
+    --theme-dark: rgb(128, 144, 192);
+    --theme: rgb(144, 160, 208);
+    --theme-light: rgb(160, 176, 224);
+    --theme-lighter: rgb(176, 192, 240);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--theme-darker);
+}
+
+body {
+    background-color: var(--theme-light);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: var(--theme);
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+footer {
+    background-color: var(--theme);
+    height: 250px;
+}
+
+.divider {
+    background-color: var(--theme-dark);
+    height: 2px;
+}
+
+.nav-section {
+    display: flex;
+    margin: 0px;
+    padding: 14px;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown li {
+    padding: 5px;
+}
+
+.nav-dropdown ul {
+    background-color: var(--theme-light);
+    border: 2px solid var(--theme-darker);
+    border-radius: 5px;
+    display: none;
+    font-size: 15px;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 20px 0px 0px 0px;
+    position: absolute;
+    padding: 0px;
+    width: 100px;
+}
+
+.nav-item {
+    padding: 0px 15px;
+}
+
+.nav-item button {
+    background: none;
+    border: none;
+}
+
+.nav-item a {
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: var(--theme-darker);
+}
+
+#container {
+    background-color: var(--theme-lighter);
+    height: 1000px;
+    margin: 0px 100px;
+    padding: 30px;
+}
+
+#nav-left {
+    float: left;
+}
+
+#nav-right {
+    float: right;
+}
