@@ -80,22 +80,104 @@ nav ul a:hover {
 /* Footer */
 footer {
     background-color: var(--theme-dark);
-    height: 100px;
     margin: 0px;
     padding: 0px;
     width: 100%;
+    text-align: center;
 }
 
-footer ul {
-    margin: 0px;
+footer > ul {
+    display: inline-block;
+    margin: 0px auto;
     padding: 0px;
 }
 
-/* Other */
+footer ul ul {
+    float: left;
+    margin: 50px;
+    padding: 0px;
+}
 
+footer ul ul a, footer ul ul > p {
+    color: var(--theme-white);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 0px 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    width: 150px;
+}
+
+footer ul ul a:hover {
+    background-color: var(--theme-highlight);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer ul ul > p {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+footer ul #footer-icons a img {
+    height: 25px;
+    width: 25px;
+}
+
+footer ul #footer-icons a p {
+    line-height: 25px;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+
+/* Other */
 .highlight-disable {
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Footer */
+    footer > ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
+
+    footer ul ul {        
+        margin: 50px 20px;
+    }
+
+    /* Other */
+    .hide-768px {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* Navigation */
+    nav ul a {
+        padding: 0px 20px;
+    }
+
+    nav ul a:hover {
+        padding: 0px 30px;
+    }
+    
+    /* Other */
+    .hide-450px {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* Other */
+    .hide-375px {
+        display: none;
+    }
 }

@@ -20,50 +20,55 @@
     font-size: 40px;
 }
 
-#header-title:hover {
-    color: #FFFFFF;
-}
-
 #header-description, #header-title {
     color: var(--theme-white);
     margin: 0px;
     padding: 0px;
+}
+
+/* Tips */
+#tips {
+    margin: 150px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#tips ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#tips ul p {
+    color: var(--theme-white);
+    font-size: 24px;
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+/* Portal */
+#portal {
+    margin: 150px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#portal-link {
+    background-color: var(--theme-light);
+    padding: 10px 50px;
     text-decoration: none;
+    width: 100px;
+}
+
+#portal-link:hover {
+    background-color: var(--theme-highlight);
+    color: #FFFFFF;
+    padding: 10px 60px;
+}
+
+#portal-link, #portal-title {
+    color: var(--theme-white);
+    font-size: 24px;
     transition: all 0.2s ease;
-}
-
-/* About */
-#about {
-    margin: 150px 0px;
-    padding: 0px;
-}
-
-#about-content {
-    color: var(--theme-white);
-    line-height: 50px;
-}
-
-#about-title {
-    color: var(--theme-white);
-    font-size: 24px;
-    text-align: center;
-}
-
-/* Soon */
-#soon {
-    margin: 150px 0px;
-    padding: 0px;
-}
-
-#soon-content {
-    color: var(--theme-white);
-    line-height: 50px;
-}
-
-#soon-title {
-    color: var(--theme-white);
-    font-size: 24px;
-    text-align: center;
 }
 
 /* Other */
