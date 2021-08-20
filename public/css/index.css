@@ -94,6 +94,7 @@ footer > ul {
 
 footer ul ul {
     float: left;
+    height: 300px;
     margin: 50px;
     padding: 0px;
 }

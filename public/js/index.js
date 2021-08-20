@@ -24,17 +24,17 @@ class Manager extends null {
     /**
      * Returns an array of elements that matched the class name
      * @static
-     * @param {string} c Class
+     * @param {string} c Class name
      * @returns {object[]}
      */
     static getClass(c) {
-        return Manager.getClasses(c);
+        return Manager.document.getElementsByClassName(c);
     };
 
     /**
      * Returns an array of arrays of elements that matched the class names
      * @static
-     * @param {...string} cs Classes
+     * @param {...string} cs Class names
      * @returns {object[][]}
      */
     static getClasses(...cs) {
@@ -59,5 +59,25 @@ class Manager extends null {
      */
     static getIDs(...is) {
         return is.map(Manager.getID);
+    };
+
+    /**
+     * Returns an array of elements that matched the tag name
+     * @static
+     * @param {string} t Tag name
+     * @returns {object[]}
+     */
+    static getTag(t) {
+        return Manager.document.getElementsByTagName(t);
+    };
+
+    /**
+     * Returns an array of arrays of elements that matched the tag names
+     * @static
+     * @param {...string} ts Tag names
+     * @returns {object[][]}
+     */
+    static getTags(...ts) {
+        return ts.map(Manager.getTag);
     };
 };
