@@ -6,12 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dm12332131mD/website.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dm12332131mD/website/issues"
+  },
+  "homepage": "https://github.com/Dm12332131mD/website#readme",
   "dependencies": {
-    "dmmd.js": "^1.3.0",
-    "ejs": "^3.1.6",
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   }
 }

@@ -1,16 +1,16 @@
+"use strict";
+
 // Imports
-const config = require("./config.json");
+const chalk = require("chalk");
+const dotenv = require("dotenv");
 const express = require("express");
-const src = require("./public/src/exports.js");
 
 // Variables
 let app = express();
 
-// Middlewares
-app.use("/", require("./public/src/routes/index.js"));
-
-// Listens
-app.listen(config.port, () => {
-    console.clear();
-    src.log("init", config);
+// Executes
+dotenv.config();
+app.use("/", require("./src/routes/index.js"));
+app.listen(+process.env.PORT, () => {
+    console.log(chalk.green(`Listening on port ${process.env.PORT}`));
 });
